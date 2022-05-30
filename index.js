@@ -2,7 +2,8 @@
 const Discord = require('discord.js');
 require('dotenv').config();
 require('discord-reply');
-const {prefix, token} = require('./config.json');
+const {prefix} = require('./config.json');
+const token = process.env.DISCORD_TOKEN;
 
 const client = new Discord.Client( { ws: {intents: 641}} );
 client.commands = new Discord.Collection();
