@@ -22,7 +22,7 @@ client.once('ready', () => {
     client.user.setPresence({
         status: "online",
         activity: {
-            name: "Comendo quem ta lendo"
+            name: "Viajando por aí ✨"
         }
     })
 });
@@ -33,7 +33,7 @@ client.on('message', async message => {
         const chance = Math.floor(Math.random() * 3);
 
         if (chance == 1) {
-            const phrases = [/*'Cala a boca, gostosa', */'Da uma sugada aqui vaikkkkk', 'Tá achando que engana quem, vadia?', 
+            const phrases = ['Cala a boca, gostosa', 'Da uma sugada aqui vaikkkkk', 'Tá achando que engana quem, vadia?', 
             'Você está devendo uma mamada para todos do Server :banana:', 'O cara usa invisívelKKKKK'];
             const index = Math.floor(Math.random() * phrases.length);
 
